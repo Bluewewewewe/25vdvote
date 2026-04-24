@@ -280,7 +280,12 @@ body{
   .title{font-size:42px;}
   .subtitle{font-size:20px;}
   .countdown{font-size:17px;}
-  .danmu-panel{grid-template-columns:1fr;}
+  .danmu-panel{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    max-width:420px;
+    margin-bottom:14px;
+  }
   .tv-frame{ width:96vw; border-radius:14px; }
   .tv-power{ padding:12px 14px; }
 }
@@ -318,13 +323,13 @@ body{
   }
 
   .action-buttons button{
-    padding:14px 0; /* 更好点 */
-    font-size:16px;
+    padding:10px 12px;
+    font-size:14px;
   }
 
   .danmu-panel button{
-    padding:14px 12px;
-    font-size:15px;
+    padding:10px 10px;
+    font-size:13px;
   }
 }
 </style>
